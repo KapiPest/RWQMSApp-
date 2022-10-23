@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/admin_dash_background"
+    tools:context=".Analytics">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:text="ANALYTICS"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <RelativeLayout
+        android:id="@+id/waterTemperatureParameters"
+        android:layout_width="330dp"
+        android:layout_height="400dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/upcoming_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/upcoming" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="320dp"
+            android:text="Upcoming..."
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginStart="20dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cardview_background"
+            app:cardPreventCornerOverlap="false"
+            app:cardCornerRadius="30dp"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/dashboardIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="220dp"
+                android:background="@drawable/dashboard_icon" />
+
+            <ImageButton
+                android:id="@+id/analyticsIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="75dp"
+                android:layout_marginEnd="0dp"
+                android:background="@drawable/analytics_icon" />
+
+            <ImageButton
+                android:id="@+id/contactsIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginEnd="0dp"
+                android:background="@drawable/contacts_icon" />
+
+            <ImageButton
+                android:id="@+id/sensorsIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginEnd="0dp"
+                android:background="@drawable/sensors_icon" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

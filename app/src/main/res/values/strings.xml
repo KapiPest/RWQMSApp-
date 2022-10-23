@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">RWQMSApp</string>
+
+    <string name="message">
+
+        THIS IS A TRIAL POPUP ONLY
+        TRUST ME BRO
+        REALLY BRO
+
+    </string>
+
+    <string name="main_page_message">
+
+        Real-time Aqualert Monitoring helps you monitor
+        water status. We provide data results, analytics
+        and other information you need, pertaining to the
+                    quality of your waters.
+
+    </string>
+
+    <string name="discover_text"> Learn Water Quality Information
+    </string>
+
+    <string name="topic_text"> Topics that can enlighten your
+                               comprehension of Water Quality
+                               Information
+    </string>
+
+
+</resources>

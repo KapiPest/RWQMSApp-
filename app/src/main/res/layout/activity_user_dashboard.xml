@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/admin_dash_background"
+    tools:context=".UserDashboard">
+
+    <TextView
+        android:id="@+id/dashboardText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:text="DASHBOARD"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/knowStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        android:text="Know the status of your water"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/waterTemperatureParameters"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/status_border"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/water_icon" />
+
+
+        <TextView
+            android:id="@+id/waterQualityStatus"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:text="CHECK YOUR WATER"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/weatherStatusTodayText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:text="WATER STATUS TODAY"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/waterTemperatureCard"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardPreventCornerOverlap="false">
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cardview_background"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/waterTemperatureParameterTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="200dp"
+                android:layout_marginBottom="100dp"
+                android:text="16:22"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/waterTemperatureParameterValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="55dp"
+                android:layout_marginEnd="100dp"
+                android:layout_marginBottom="0dp"
+                android:text="20.5 C"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/waterTemperatureText"
+                android:layout_width="600dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginEnd="100dp"
+                android:layout_marginBottom="0dp"
+                android:text="WATER TEMPERATURE"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/waterTemperatureParameterStatus"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="145dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="NORMAL"
+                android:textColor="#2174FD"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/waterTurbidityCard"
+        android:layout_width="150dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="460dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="50dp"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardPreventCornerOverlap="false">
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cardview_background"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/waterTurbidityParameterTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="245dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="200dp"
+                android:layout_marginBottom="130dp"
+                android:text="16:22"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/waterTurbidityParameterValue"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="200dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="200dp"
+                android:layout_marginBottom="0dp"
+                android:gravity="center"
+                android:text="20.5 C"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/waterTurbidityText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="210dp"
+                android:layout_marginTop="85dp"
+                android:layout_marginEnd="150dp"
+                android:layout_marginBottom="0dp"
+                android:text="WATER TURBIDITY"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/waterTurbidityParameterStatus"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="190dp"
+                android:layout_marginTop="115dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="NORMAL"
+                android:textColor="#2174FD"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/waterPhCard"
+        android:layout_width="150dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="460dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginEnd="50dp"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardPreventCornerOverlap="false">
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cardview_background"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/waterPhParameterTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="245dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="200dp"
+                android:layout_marginBottom="130dp"
+                android:text="16:22"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/waterPhParameterValue"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="205dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="200dp"
+                android:layout_marginBottom="0dp"
+                android:gravity="center"
+                android:text="20.5 C"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/waterPhText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="235dp"
+                android:layout_marginTop="86dp"
+                android:layout_marginEnd="150dp"
+                android:layout_marginBottom="0dp"
+                android:text="PH LEVEL"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/waterPhParameterStatus"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="190dp"
+                android:layout_marginTop="115dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp"
+                android:gravity="center"
+                android:text="NORMAL"
+                android:textColor="#2174FD"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

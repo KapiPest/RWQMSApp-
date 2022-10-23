@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_welcome"
+    tools:context=".UsersWelcoming">
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginStart="40dp"
+        android:text="TOWARDS"
+        android:textColor="@color/light_light_blue"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="40dp"
+        android:text="BLUE MONITORING"
+        android:textColor="@color/light_blue"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginStart="125dp"
+        android:text="Choose your actions:"
+        android:textColor="@color/light_light_blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/dashboardCard"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardPreventCornerOverlap="false">
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cardview_background"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="100dp"
+                android:text="Dashboard"
+                android:textColor="@color/light_light_blue"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="55dp"
+                android:layout_marginEnd="100dp"
+                android:text="What's the Status today"
+                android:textColor="@color/light_light_blue"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="140dp"
+                android:background="@drawable/dashboard_card_icon" />
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/discoverCard"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginTop="480dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardPreventCornerOverlap="false">
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cardview_background"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginStart="175dp"
+            android:text="Discover"
+            android:textColor="@color/light_light_blue"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="75dp"
+            android:layout_marginStart="140dp"
+            android:text="@string/discover_text"
+            android:gravity="right"
+            android:textColor="@color/light_light_blue"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/discover_icon" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

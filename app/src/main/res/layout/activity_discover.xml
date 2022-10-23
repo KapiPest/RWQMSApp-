@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/discovery_bg"
+    tools:context=".Discover">
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="200dp"
+        android:background="@drawable/floating_human"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="90dp"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:text="LEARN"
+        android:textColor="@color/light_blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="190dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="120dp"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:text="WATER QUALITY"
+        android:textColor="@color/light_light_blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="150dp"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:text="TOPICS"
+        android:textColor="@color/light_light_blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="185dp"
+        android:textSize="12sp"
+        android:text="@string/topic_text"
+        android:textColor="@color/light_light_blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.widget.Button
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="TOPICS"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:background="@drawable/topics_cardview_button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/discoverWhoCard"
+        android:layout_width="170dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="50dp"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardPreventCornerOverlap="false">
+
+
+        <RelativeLayout
+
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/topics_cardview"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/who_icon" />
+
+            <android.widget.Button
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="110dp"
+                android:background="@drawable/topics_cardview_button"
+                android:text="WHO"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            
+            
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/discoverDrinkCard"
+        android:layout_width="170dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginEnd="50dp"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardPreventCornerOverlap="false">
+
+
+        <RelativeLayout
+
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/topics_cardview"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/water_bottle" />
+
+            <android.widget.Button
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="110dp"
+                android:background="@drawable/topics_cardview_button"
+                android:text="Drinking Water"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/discoverPollutionCard"
+        android:layout_width="170dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="520dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginEnd="50dp"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardPreventCornerOverlap="false">
+
+
+        <RelativeLayout
+
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/topics_cardview"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/pollution_icon" />
+
+            <android.widget.Button
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="110dp"
+                android:background="@drawable/topics_cardview_button"
+                android:text="water pollution"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/discoverWaterBorneCard"
+        android:layout_width="170dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="520dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="50dp"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardPreventCornerOverlap="false">
+
+
+        <RelativeLayout
+
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/topics_cardview"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/water_borne" />
+
+            <android.widget.Button
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="110dp"
+                android:background="@drawable/topics_cardview_button"
+                android:text="diseases"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
